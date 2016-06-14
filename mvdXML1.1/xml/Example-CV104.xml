@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mvdXML name="mvdXML examples" uuid="4afb1a8b-0b61-4ff8-9863-c10690fe06f2" xmlns="http://buildingsmart-tech.org/mvdXML/mvdXML1-1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://buildingsmart-tech.org/mvdXML/mvdXML1-1 ../xsd/mvdXML_V1-1_draft.xsd">
+<mvdXML name="Example-CV-104" uuid="4afb1a8b-0b61-4ff8-9863-c10690fe06f2" xmlns="http://buildingsmart-tech.org/mvd/XML/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://buildingsmart-tech.org/mvd/XML/1.1 http://buildingsmart-tech.org/mvd/XML/1.1/mvdXML_V1.1.xsd">
   <Templates>
     <ConceptTemplate uuid="252a5fa6-cc5b-4d30-bd0c-35e22e336499" name="Connectivity" code="" status="" applicableSchema="IFC4" applicableEntity="IfcObject">
       <Definitions>
@@ -19,21 +19,21 @@
             </Definition>
           </Definitions>
           <Rules>
-            <AttributeRule AttributeName="FillsVoids" Cardinality="_asSchema">
+            <AttributeRule AttributeName="FillsVoids">
               <EntityRules>
-                <EntityRule EntityName="IfcRelFillsElement" Cardinality="_asSchema">
+                <EntityRule EntityName="IfcRelFillsElement">
                   <AttributeRules>
-                    <AttributeRule AttributeName="RelatingOpeningElement" Cardinality="_asSchema">
+                    <AttributeRule AttributeName="RelatingOpeningElement">
                       <EntityRules>
-                        <EntityRule EntityName="IfcOpeningElement" Cardinality="_asSchema">
+                        <EntityRule EntityName="IfcOpeningElement">
                           <AttributeRules>
-                            <AttributeRule AttributeName="VoidsElements" Cardinality="_asSchema">
+                            <AttributeRule AttributeName="VoidsElements">
                               <EntityRules>
-                                <EntityRule EntityName="IfcRelVoidsElement" Cardinality="_asSchema">
+                                <EntityRule EntityName="IfcRelVoidsElement">
                                   <AttributeRules>
-                                    <AttributeRule RuleID="Type" AttributeName="RelatingElement" Cardinality="_asSchema">
+                                    <AttributeRule RuleID="Type" AttributeName="RelatingElement">
                                       <EntityRules>
-                                        <EntityRule EntityName="IfcElement" Cardinality="_asSchema">
+                                        <EntityRule EntityName="IfcElement"/>
                                         </EntityRule>
                                       </EntityRules>
                                     </AttributeRule>
@@ -41,7 +41,7 @@
                                 </EntityRule>
                               </EntityRules>
                             </AttributeRule>
-                            <AttributeRule AttributeName="HasFillings" Cardinality="ZeroToOne">
+                            <AttributeRule AttributeName="HasFillings"/>
                             </AttributeRule>
                           </AttributeRules>
                         </EntityRule>
